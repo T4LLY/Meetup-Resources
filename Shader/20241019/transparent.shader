@@ -48,10 +48,7 @@ Shader "Particle/Transparent"
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag
-            // make fog work
-            #pragma multi_compile_fog
             #pragma shader_feature_vertex _ _CUSTOM_VELOCITY _CUSTOM_NOISE
-            #pragma shader_feature_vertex _ _Dither
 
             #include "UnityCG.cginc"
 
